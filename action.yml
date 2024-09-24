@@ -1,0 +1,20 @@
+name: ros2-deb-gen-action
+description: Build ros2 packages as debian binaries using rosdebian
+author: Rishikesavan Ramesh
+
+
+inputs:
+  who-to-greet:
+    description: Who to greet
+    required: true
+    default: World
+
+
+outputs:
+  time:
+    description: The time we greeted you
+
+
+runs:
+  using: node20
+  main: index.js
